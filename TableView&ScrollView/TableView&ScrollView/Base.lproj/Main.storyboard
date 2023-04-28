@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hR-L7-263">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1050"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1250"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZdD-OA-CXe">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
@@ -49,20 +49,20 @@
                                                 </constraints>
                                             </view>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="820-YB-sAL">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="500"/>
+                                                <rect key="frame" x="0.0" y="208" width="393" height="292"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="500" id="vL9-gw-NMm"/>
+                                                    <constraint firstAttribute="height" constant="292" id="vL9-gw-NMm"/>
                                                 </constraints>
                                             </tableView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="820-YB-sAL" secondAttribute="bottom" constant="550" id="0UR-rm-q32"/>
+                                            <constraint firstAttribute="bottom" secondItem="820-YB-sAL" secondAttribute="bottom" constant="750" id="0UR-rm-q32"/>
                                             <constraint firstItem="ZdD-OA-CXe" firstAttribute="leading" secondItem="0hR-L7-263" secondAttribute="leading" id="0wn-pd-EdB"/>
                                             <constraint firstAttribute="trailing" secondItem="820-YB-sAL" secondAttribute="trailing" id="EPK-EW-0QH"/>
-                                            <constraint firstItem="820-YB-sAL" firstAttribute="top" secondItem="ZdD-OA-CXe" secondAttribute="top" id="NwC-LQ-xGB"/>
                                             <constraint firstItem="ZdD-OA-CXe" firstAttribute="top" secondItem="0hR-L7-263" secondAttribute="top" id="hca-cu-W3b"/>
+                                            <constraint firstItem="820-YB-sAL" firstAttribute="top" secondItem="ZdD-OA-CXe" secondAttribute="bottom" constant="8" id="lT0-Mq-lBw"/>
                                             <constraint firstAttribute="trailing" secondItem="ZdD-OA-CXe" secondAttribute="trailing" id="qit-wI-rHR"/>
                                             <constraint firstItem="820-YB-sAL" firstAttribute="leading" secondItem="0hR-L7-263" secondAttribute="leading" id="urV-eX-dU2"/>
                                         </constraints>
@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-247" y="-70"/>
+            <point key="canvasLocation" x="-248.09160305343511" y="-70.422535211267615"/>
         </scene>
     </scenes>
     <resources>
