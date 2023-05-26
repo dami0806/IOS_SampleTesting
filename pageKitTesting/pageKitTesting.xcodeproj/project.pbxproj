@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371CD0BE2A20459000C0F18B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CD0BD2A20459000C0F18B /* FirstViewController.swift */; };
+		371CD0C22A2045C800C0F18B /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CD0C02A2045C800C0F18B /* FirstCollectionViewCell.swift */; };
+		371CD0C32A2045C800C0F18B /* FirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371CD0C12A2045C800C0F18B /* FirstCollectionViewCell.xib */; };
+		371CD0C62A20622300C0F18B /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 371CD0C52A20622300C0F18B /* FSCalendar */; };
+		371CD0CE2A20777B00C0F18B /* ViewAnimator in Frameworks */ = {isa = PBXBuildFile; productRef = 371CD0CD2A20777B00C0F18B /* ViewAnimator */; };
+		371CD0D62A20790C00C0F18B /* MyThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CD0D52A20790C00C0F18B /* MyThirdViewController.swift */; };
+		371CD0D82A20795500C0F18B /* MyThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CD0D72A20795500C0F18B /* MyThirdVC.swift */; };
+		371CD0DA2A207DCC00C0F18B /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CD0D92A207DCC00C0F18B /* SecondTableViewController.swift */; };
+		371CD0DE2A208AE300C0F18B /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CD0DC2A208AE300C0F18B /* SecondTableViewCell.swift */; };
+		371CD0DF2A208AE300C0F18B /* SecondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 371CD0DD2A208AE300C0F18B /* SecondTableViewCell.xib */; };
+		371CD0E12A208E9C00C0F18B /* TableNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371CD0E02A208E9C00C0F18B /* TableNextViewController.swift */; };
 		3743F5E32A1F77E6003FC1EA /* FocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3743F5E22A1F77E6003FC1EA /* FocusView.xib */; };
 		3743F5E62A1F80D6003FC1EA /* RAMAnimatedTabBarController in Frameworks */ = {isa = PBXBuildFile; productRef = 3743F5E52A1F80D6003FC1EA /* RAMAnimatedTabBarController */; };
+		3743F5FB2A200B08003FC1EA /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743F5FA2A200B08003FC1EA /* MyCollectionViewCell.swift */; };
+		3743F5FD2A200BCC003FC1EA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3743F5FC2A200BCC003FC1EA /* SecondViewController.swift */; };
 		37F07DEA2A1F336E00EF037B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F07DE92A1F336E00EF037B /* AppDelegate.swift */; };
 		37F07DEC2A1F336E00EF037B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F07DEB2A1F336E00EF037B /* SceneDelegate.swift */; };
 		37F07DEE2A1F336E00EF037B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F07DED2A1F336E00EF037B /* ViewController.swift */; };
@@ -43,7 +56,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		371CD0BD2A20459000C0F18B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		371CD0C02A2045C800C0F18B /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
+		371CD0C12A2045C800C0F18B /* FirstCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstCollectionViewCell.xib; sourceTree = "<group>"; };
+		371CD0D52A20790C00C0F18B /* MyThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyThirdViewController.swift; sourceTree = "<group>"; };
+		371CD0D72A20795500C0F18B /* MyThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyThirdVC.swift; sourceTree = "<group>"; };
+		371CD0D92A207DCC00C0F18B /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
+		371CD0DC2A208AE300C0F18B /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
+		371CD0DD2A208AE300C0F18B /* SecondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondTableViewCell.xib; sourceTree = "<group>"; };
+		371CD0E02A208E9C00C0F18B /* TableNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableNextViewController.swift; sourceTree = "<group>"; };
 		3743F5E22A1F77E6003FC1EA /* FocusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FocusView.xib; sourceTree = "<group>"; };
+		3743F5FA2A200B08003FC1EA /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		3743F5FC2A200BCC003FC1EA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		37F07DE62A1F336E00EF037B /* pageKitTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pageKitTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F07DE92A1F336E00EF037B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37F07DEB2A1F336E00EF037B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,8 +92,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F07E1E2A1F3D8400EF037B /* Algorithms in Frameworks */,
+				371CD0C62A20622300C0F18B /* FSCalendar in Frameworks */,
 				37F07E212A1F3DD200EF037B /* PagingKit in Frameworks */,
 				3743F5E62A1F80D6003FC1EA /* RAMAnimatedTabBarController in Frameworks */,
+				371CD0CE2A20777B00C0F18B /* ViewAnimator in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +116,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		371CD0BF2A20459500C0F18B /* First */ = {
+			isa = PBXGroup;
+			children = (
+				371CD0BD2A20459000C0F18B /* FirstViewController.swift */,
+				371CD0C02A2045C800C0F18B /* FirstCollectionViewCell.swift */,
+				371CD0C12A2045C800C0F18B /* FirstCollectionViewCell.xib */,
+			);
+			path = First;
+			sourceTree = "<group>";
+		};
+		371CD0CF2A20783B00C0F18B /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				371CD0D52A20790C00C0F18B /* MyThirdViewController.swift */,
+				371CD0D72A20795500C0F18B /* MyThirdVC.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		371CD0DB2A208AB800C0F18B /* table */ = {
+			isa = PBXGroup;
+			children = (
+				371CD0D92A207DCC00C0F18B /* SecondTableViewController.swift */,
+				371CD0DC2A208AE300C0F18B /* SecondTableViewCell.swift */,
+				371CD0DD2A208AE300C0F18B /* SecondTableViewCell.xib */,
+				371CD0E02A208E9C00C0F18B /* TableNextViewController.swift */,
+			);
+			path = table;
+			sourceTree = "<group>";
+		};
 		37F07DDD2A1F336E00EF037B = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +169,9 @@
 		37F07DE82A1F336E00EF037B /* pageKitTesting */ = {
 			isa = PBXGroup;
 			children = (
+				371CD0DB2A208AB800C0F18B /* table */,
+				371CD0CF2A20783B00C0F18B /* Second */,
+				371CD0BF2A20459500C0F18B /* First */,
 				37F07E192A1F376800EF037B /* PagingKit */,
 				37F07DE92A1F336E00EF037B /* AppDelegate.swift */,
 				37F07DEB2A1F336E00EF037B /* SceneDelegate.swift */,
@@ -121,6 +180,8 @@
 				37F07DF22A1F337100EF037B /* Assets.xcassets */,
 				37F07DF42A1F337100EF037B /* LaunchScreen.storyboard */,
 				37F07DF72A1F337100EF037B /* Info.plist */,
+				3743F5FA2A200B08003FC1EA /* MyCollectionViewCell.swift */,
+				3743F5FC2A200BCC003FC1EA /* SecondViewController.swift */,
 			);
 			path = pageKitTesting;
 			sourceTree = "<group>";
@@ -173,6 +234,8 @@
 				37F07E1D2A1F3D8400EF037B /* Algorithms */,
 				37F07E202A1F3DD200EF037B /* PagingKit */,
 				3743F5E52A1F80D6003FC1EA /* RAMAnimatedTabBarController */,
+				371CD0C52A20622300C0F18B /* FSCalendar */,
+				371CD0CD2A20777B00C0F18B /* ViewAnimator */,
 			);
 			productName = pageKitTesting;
 			productReference = 37F07DE62A1F336E00EF037B /* pageKitTesting.app */;
@@ -250,6 +313,8 @@
 				37F07E1C2A1F3D8400EF037B /* XCRemoteSwiftPackageReference "swift-algorithms" */,
 				37F07E1F2A1F3DD200EF037B /* XCRemoteSwiftPackageReference "PagingKit" */,
 				3743F5E42A1F80D6003FC1EA /* XCRemoteSwiftPackageReference "animated-tab-bar" */,
+				371CD0C42A20622300C0F18B /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				371CD0CC2A20777B00C0F18B /* XCRemoteSwiftPackageReference "ViewAnimator" */,
 			);
 			productRefGroup = 37F07DE72A1F336E00EF037B /* Products */;
 			projectDirPath = "";
@@ -268,8 +333,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F07DF62A1F337100EF037B /* LaunchScreen.storyboard in Resources */,
+				371CD0C32A2045C800C0F18B /* FirstCollectionViewCell.xib in Resources */,
 				37F07DF32A1F337100EF037B /* Assets.xcassets in Resources */,
 				37F07E252A1F40A800EF037B /* MenuCell.xib in Resources */,
+				371CD0DF2A208AE300C0F18B /* SecondTableViewCell.xib in Resources */,
 				3743F5E32A1F77E6003FC1EA /* FocusView.xib in Resources */,
 				37F07DF12A1F336E00EF037B /* Main.storyboard in Resources */,
 			);
@@ -296,9 +363,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371CD0DA2A207DCC00C0F18B /* SecondTableViewController.swift in Sources */,
 				37F07DEE2A1F336E00EF037B /* ViewController.swift in Sources */,
 				37F07E232A1F3F1700EF037B /* MenuCell.swift in Sources */,
+				371CD0D62A20790C00C0F18B /* MyThirdViewController.swift in Sources */,
+				3743F5FB2A200B08003FC1EA /* MyCollectionViewCell.swift in Sources */,
+				371CD0D82A20795500C0F18B /* MyThirdVC.swift in Sources */,
+				371CD0BE2A20459000C0F18B /* FirstViewController.swift in Sources */,
 				37F07E1B2A1F378F00EF037B /* PagingKitViewController.swift in Sources */,
+				3743F5FD2A200BCC003FC1EA /* SecondViewController.swift in Sources */,
+				371CD0DE2A208AE300C0F18B /* SecondTableViewCell.swift in Sources */,
+				371CD0E12A208E9C00C0F18B /* TableNextViewController.swift in Sources */,
+				371CD0C22A2045C800C0F18B /* FirstCollectionViewCell.swift in Sources */,
 				37F07DEA2A1F336E00EF037B /* AppDelegate.swift in Sources */,
 				37F07DEC2A1F336E00EF037B /* SceneDelegate.swift in Sources */,
 			);
@@ -644,6 +720,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		371CD0C42A20622300C0F18B /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		371CD0CC2A20777B00C0F18B /* XCRemoteSwiftPackageReference "ViewAnimator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcosgriselli/ViewAnimator.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		3743F5E42A1F80D6003FC1EA /* XCRemoteSwiftPackageReference "animated-tab-bar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Ramotion/animated-tab-bar.git";
@@ -671,6 +763,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		371CD0C52A20622300C0F18B /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 371CD0C42A20622300C0F18B /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+		371CD0CD2A20777B00C0F18B /* ViewAnimator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 371CD0CC2A20777B00C0F18B /* XCRemoteSwiftPackageReference "ViewAnimator" */;
+			productName = ViewAnimator;
+		};
 		3743F5E52A1F80D6003FC1EA /* RAMAnimatedTabBarController */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3743F5E42A1F80D6003FC1EA /* XCRemoteSwiftPackageReference "animated-tab-bar" */;
