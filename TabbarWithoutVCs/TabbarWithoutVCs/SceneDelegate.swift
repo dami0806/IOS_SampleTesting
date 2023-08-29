@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  MapKitTest
+//  TabbarWithoutVCs
 //
-//  Created by 박다미 on 2023/07/23.
+//  Created by 박다미 on 2023/08/29.
 //
 
 import UIKit
@@ -10,20 +10,18 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
-
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        
         window = UIWindow(windowScene: windowScene)
         
-        let viewController = UINavigationController(rootViewController: ViewController())
-        
+        //루트 뷰 컨트롤러를 SignInViewController로 설정
+        let viewController = ViewController()
         window?.rootViewController = viewController
+        
+        //화면 보이게 윈도우 키 윈도우 설정
         window?.makeKeyAndVisible()
-        window?.windowScene = windowScene
     }
-
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

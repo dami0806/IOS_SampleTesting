@@ -14,7 +14,25 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     private let mapView = MKMapView()
     private let locationManager = CLLocationManager()
-    private let myLocationButton = UIButton()
+    private let myLocationButton : UIButton = {
+        let button = UIButton()
+        button.setTitle("내 위치", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .blue
+        button.layer.cornerRadius = 8.0
+        return button
+    }()
+    private lazy var googleMapButton : UIButton = {
+        let button = UIButton()
+        button.setTitle("구글지도", for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .blue
+        button.layer.cornerRadius = 8.0
+        return button
+    }()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,29 +53,34 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             make.edges.equalToSuperview()
         }
         
-        // 내 위치로 이동하는 버튼 설정
-        myLocationButton.setTitle("내 위치", for: .normal)
-        myLocationButton.setTitleColor(.white, for: .normal)
-        myLocationButton.backgroundColor = .blue
-        myLocationButton.layer.cornerRadius = 8.0
-        myLocationButton.addTarget(self, action: #selector(showMyLocation), for: .touchUpInside)
-        
         view.addSubview(myLocationButton)
+        myLocationButton.addTarget(self, action: #selector(showMyLocation), for: .touchUpInside)
         myLocationButton.snp.makeConstraints { make in
-            make.bottom.equalTo(view.safeAreaLayoutGuide).offset(-16)
+            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(15)
             make.centerX.equalToSuperview()
-            make.width.equalTo(120)
-            make.height.equalTo(40)
+            make.width.equalToSuperview().dividedBy(3)
+            make.height.equalTo(myLocationButton.snp.width).dividedBy(3)
+        }
+        googleMapButton.addTarget(self, action: #selector(openGoogleMap), for: .touchUpInside)
+        view.addSubview(googleMapButton)
+        googleMapButton.snp.makeConstraints { make in
+            make.bottom.equalTo(view.safeAreaLayoutGuide).inset(15)
+            make.trailing.equalToSuperview().inset(10)
+            make.width.equalToSuperview().dividedBy(3)
+            make.height.equalTo(googleMapButton.snp.width).dividedBy(3)
         }
     }
     
+    @objc private func openGoogleMap(){
+        let googleMapVC = GoogleMapViewController()
+               navigationController?.pushViewController(googleMapVC, animated: true)
+    }
     // MARK: - 내 위치로 이동하는 액션
-    
     @objc private func showMyLocation() {
         if let userLocation = mapView.userLocation.location?.coordinate {
                 let region = MKCoordinateRegion(center: userLocation, latitudinalMeters: 500, longitudinalMeters: 500)
 
-                mapView.setRegion(region, animated: true)
+            mapView.setRegion(region, animated: true)
             mapView.removeOverlays(mapView.overlays)
 
                 // 100미터 반경의 동그라미를 그리기 위해 코드 추가
@@ -88,12 +111,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
                 return
             }
             
-//            // 검색 결과 중 장소들을 지도에 표시
+            // 검색 결과 중 장소들을 지도에 표시
 //            for item in response.mapItems {
 //                self.addAnnotationToMap(item)
-//              //  print(item)
+//              // print(item)
 //            }
-            // 검색 결과 중 원 안에 있는 카페들을 지도에 표시
+         //    검색 결과 중 원 안에 있는 카페들을 지도에 표시
                   for item in response.mapItems {
                       let itemLocation = CLLocation(latitude: item.placemark.coordinate.latitude, longitude: item.placemark.coordinate.longitude)
                       let centerLocation = CLLocation(latitude: center.latitude, longitude: center.longitude)
@@ -124,7 +147,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     private func showPlacesInBottomSheet(_ places: [MKMapItem]) {
     }
     // MARK: - CLLocationManagerDelegate
-    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         // 위치 업데이트를 받았을 때 호출되는 메서드
         if let location = locations.last {
