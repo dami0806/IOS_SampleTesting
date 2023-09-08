@@ -1,28 +1,7 @@
 import UIKit
 import SnapKit
-//class BottomSheet1ViewController: BottomSheetViewController {
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        bottomSheetView.backgroundColor = .blue
-//    }
-//}
-//
-//class BottomSheet2ViewController: BottomSheetViewController {
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        bottomSheetView.backgroundColor = .green
-//    }
-//}
-//
-//class BottomSheet3ViewController: BottomSheetViewController {
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        bottomSheetView.backgroundColor = .orange
-//    }
-//}
+
+//모델
 class BottomSheetModel {
     var backgroundColor: UIColor
     var initialHeight: CGFloat
@@ -39,6 +18,8 @@ class BottomSheetModel {
 let model1 = BottomSheetModel(backgroundColor: .blue, initialHeight: 300, expandedHeight: 900)
 let model2 = BottomSheetModel(backgroundColor: .green, initialHeight: 300, expandedHeight: 900)
 let model3 = BottomSheetModel(backgroundColor: .orange, initialHeight: 300, expandedHeight: 900)
+
+
 class BottomSheetViewController: UIViewController {
     var model: BottomSheetModel?
 
