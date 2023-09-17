@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  KakaoMap_v2
+//
+//  Created by 박다미 on 2023/09/11.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+KAKAO_NATIVE_APP_KEY = 16092d205c17a7be562b5b99b6e12341
