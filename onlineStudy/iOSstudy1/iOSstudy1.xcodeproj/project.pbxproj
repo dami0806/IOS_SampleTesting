@@ -17,6 +17,9 @@
 		3792FFCB2AEE3A3F008A9583 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792FFCA2AEE3A3F008A9583 /* Condition.swift */; };
 		3792FFCD2AEE3FDE008A9583 /* Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792FFCC2AEE3FDE008A9583 /* Loop.swift */; };
 		3792FFCF2AEE72C3008A9583 /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792FFCE2AEE72C3008A9583 /* Function.swift */; };
+		3792FFD12AEEA94B008A9583 /* Half.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792FFD02AEEA94B008A9583 /* Half.swift */; };
+		3792FFD32AEEAFA3008A9583 /* Elevator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792FFD22AEEAFA3008A9583 /* Elevator.swift */; };
+		3792FFD52AEEBA0A008A9583 /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3792FFD42AEEBA0A008A9583 /* Diff.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		3792FFCA2AEE3A3F008A9583 /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
 		3792FFCC2AEE3FDE008A9583 /* Loop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loop.swift; sourceTree = "<group>"; };
 		3792FFCE2AEE72C3008A9583 /* Function.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Function.swift; sourceTree = "<group>"; };
+		3792FFD02AEEA94B008A9583 /* Half.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Half.swift; sourceTree = "<group>"; };
+		3792FFD22AEEAFA3008A9583 /* Elevator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elevator.swift; sourceTree = "<group>"; };
+		3792FFD42AEEBA0A008A9583 /* Diff.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diff.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +54,6 @@
 		3792FFA62AEE2A95008A9583 = {
 			isa = PBXGroup;
 			children = (
-				3792FFCE2AEE72C3008A9583 /* Function.swift */,
 				3792FFB12AEE2A95008A9583 /* iOSstudy1 */,
 				3792FFB02AEE2A95008A9583 /* Products */,
 			);
@@ -65,6 +70,7 @@
 		3792FFB12AEE2A95008A9583 /* iOSstudy1 */ = {
 			isa = PBXGroup;
 			children = (
+				3792FFCE2AEE72C3008A9583 /* Function.swift */,
 				3792FFB22AEE2A95008A9583 /* AppDelegate.swift */,
 				3792FFB42AEE2A95008A9583 /* SceneDelegate.swift */,
 				3792FFB62AEE2A95008A9583 /* ViewController.swift */,
@@ -75,6 +81,9 @@
 				3792FFC82AEE365E008A9583 /* MyCollections.swift */,
 				3792FFCA2AEE3A3F008A9583 /* Condition.swift */,
 				3792FFCC2AEE3FDE008A9583 /* Loop.swift */,
+				3792FFD02AEEA94B008A9583 /* Half.swift */,
+				3792FFD22AEEAFA3008A9583 /* Elevator.swift */,
+				3792FFD42AEEBA0A008A9583 /* Diff.swift */,
 			);
 			path = iOSstudy1;
 			sourceTree = "<group>";
@@ -152,8 +161,11 @@
 				3792FFC92AEE365E008A9583 /* MyCollections.swift in Sources */,
 				3792FFCB2AEE3A3F008A9583 /* Condition.swift in Sources */,
 				3792FFCD2AEE3FDE008A9583 /* Loop.swift in Sources */,
+				3792FFD52AEEBA0A008A9583 /* Diff.swift in Sources */,
 				3792FFB72AEE2A95008A9583 /* ViewController.swift in Sources */,
 				3792FFC72AEE31CD008A9583 /* VariableType.swift in Sources */,
+				3792FFD32AEEAFA3008A9583 /* Elevator.swift in Sources */,
+				3792FFD12AEEA94B008A9583 /* Half.swift in Sources */,
 				3792FFB32AEE2A95008A9583 /* AppDelegate.swift in Sources */,
 				3792FFB52AEE2A95008A9583 /* SceneDelegate.swift in Sources */,
 				3792FFCF2AEE72C3008A9583 /* Function.swift in Sources */,
