@@ -12,6 +12,10 @@
 		37FCDB1D2B0513B500EE99A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37FCDB1C2B0513B500EE99A6 /* ViewController.swift */; };
 		37FCDB222B0513B900EE99A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37FCDB212B0513B900EE99A6 /* Assets.xcassets */; };
 		37FCDB252B0513B900EE99A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37FCDB232B0513B900EE99A6 /* LaunchScreen.storyboard */; };
+		37FCDB2E2B05148E00EE99A6 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 37FCDB2D2B05148E00EE99A6 /* RxCocoa */; };
+		37FCDB302B05148F00EE99A6 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 37FCDB2F2B05148E00EE99A6 /* RxRelay */; };
+		37FCDB322B05148F00EE99A6 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 37FCDB312B05148F00EE99A6 /* RxSwift */; };
+		37FCDB352B05180000EE99A6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 37FCDB342B05180000EE99A6 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37FCDB322B05148F00EE99A6 /* RxSwift in Frameworks */,
+				37FCDB352B05180000EE99A6 /* SnapKit in Frameworks */,
+				37FCDB302B05148F00EE99A6 /* RxRelay in Frameworks */,
+				37FCDB2E2B05148E00EE99A6 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +88,12 @@
 			dependencies = (
 			);
 			name = Test_OrderLogic;
+			packageProductDependencies = (
+				37FCDB2D2B05148E00EE99A6 /* RxCocoa */,
+				37FCDB2F2B05148E00EE99A6 /* RxRelay */,
+				37FCDB312B05148F00EE99A6 /* RxSwift */,
+				37FCDB342B05180000EE99A6 /* SnapKit */,
+			);
 			productName = Test_OrderLogic;
 			productReference = 37FCDB152B0513B500EE99A6 /* Test_OrderLogic.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +122,10 @@
 				Base,
 			);
 			mainGroup = 37FCDB0C2B0513B500EE99A6;
+			packageReferences = (
+				37FCDB2C2B05148E00EE99A6 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				37FCDB332B05180000EE99A6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 37FCDB162B0513B500EE99A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -349,6 +367,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		37FCDB2C2B05148E00EE99A6 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+		37FCDB332B05180000EE99A6 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		37FCDB2D2B05148E00EE99A6 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37FCDB2C2B05148E00EE99A6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		37FCDB2F2B05148E00EE99A6 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37FCDB2C2B05148E00EE99A6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		37FCDB312B05148F00EE99A6 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37FCDB2C2B05148E00EE99A6 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		37FCDB342B05180000EE99A6 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37FCDB332B05180000EE99A6 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37FCDB0D2B0513B500EE99A6 /* Project object */;
 }
